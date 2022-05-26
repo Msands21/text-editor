@@ -18,14 +18,17 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      //webpack plugin generates our html file and injects our bundles
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'justAnother...'
       }),
+      //Injects service worker
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
+      //Creates Manifest.json file
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
