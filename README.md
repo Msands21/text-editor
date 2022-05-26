@@ -6,7 +6,7 @@ In this project, I used Node.js and several webpack plugins to add on to starter
 ## Project Location
 Repo Link: https://github.com/Msands21/text-editor
 
-Heroku link: 
+Heroku link: https://evening-lowlands-37775.herokuapp.com/
 
 ### Contact Info
 mikesands94@gmail.com
